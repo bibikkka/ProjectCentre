@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ProjectCentre</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Проекты</string>
+    <string name="title_tasks">Задачи</string>
+    <string name="title_notifications">Входящие</string>
+    <string name="title_person">Учетная запись</string>
+    <string name="sign">We need you to sign up</string>
+    <string name="text_bottom">Войдите в свою учетную запись</string>
+    <string name="btnSingIn">Войти</string>
+    <string name="btnRegister">Зарегистрироваться</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="catNames">
+        <item>Работник</item>
+        <item>Начальник</item>
+    </string-array>
+    <string-array name="catStatuses">
+        <item>Открыт</item>
+        <item>В работе</item>
+        <item>Выполнено</item>
+    </string-array>
+
+    <string name="password_confirm_helper">* Оба пароля должны быть одинаковыми</string>
+    <string name="password_def_helper">* Должно быть не менее 8 символов</string>
+    <string name="require_field">* Обязательное поле</string>
+    <string name="password_dont_match">Пароли не совпадают</string>
+    <string name="email_wrong">Неправильная почта!</string>
+
+</resources>

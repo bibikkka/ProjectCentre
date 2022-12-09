@@ -20,7 +20,7 @@ import kotlinx.coroutines.flow.collect
 
 @AndroidEntryPoint
 class DetailFragment : Fragment() {
-    private val args: DetailFragmentArgs by navArgs()
+//    private val args: DetailFragmentArgs by navArgs()
 
     private var _binding: FragmentDetailBinding? = null
     private val binding get() = _binding!!
@@ -37,7 +37,7 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.getTasks(args.projectID)
+//        viewModel.getTasks(args.projectID)
 
         observeOnState()
         initListeners()
@@ -50,15 +50,9 @@ class DetailFragment : Fragment() {
     }
 
     private fun initListeners() {
-        binding.zakazchikTru.text = args.projectZakazchik
-        binding.materialTextView2.text = args.projectDateStart
-        binding.dateEndTruStory.text = args.projectDateEnd
-        binding.materialTextView.text = args.projectName
 
         binding.create.setOnClickListener {
             val bundle = Bundle()
-            bundle.putInt("id", args.projectID)
-            findNavController().navigate(R.id.addTask, bundle)
         }
     }
 

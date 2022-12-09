@@ -23,10 +23,10 @@ class ExampleAdapter : ListAdapter<MainPageModel, ViewHolder>(ExampleDiffCallbac
         itemViewHolder.bind(getItem(position))
     }
 
-    fun onLinkItem(holder: ViewHolder, position: Int, onLinkItem: (String) -> Unit) {
-        val itemViewHolder = holder as ExampleViewHolder
-        itemViewHolder.onLinkItem(getItem(position), onLinkItem)
-    }
+//    fun onLinkItem(holder: ViewHolder, position: Int, onLinkItem: (String) -> Unit) {
+//        val itemViewHolder = holder as ExampleViewHolder
+//        itemViewHolder.onLinkItem(getItem(position), onLinkItem)
+//    }
 }
 
 class ExampleDiffCallback : DiffUtil.ItemCallback<MainPageModel>() {
@@ -45,10 +45,6 @@ class ExampleViewHolder(
     fun bind(item: MainPageModel) {
         val binding = (binding as AutoscrollContentBinding)
 
-        binding = item.message
-    }
-
-    fun onLinkItem(item: MainPageModel, onLinkItem: (String) -> Unit) {
-        onLinkItem.invoke(item.message)
+        binding.ivMage.setBackgroundResource(item.image)
     }
 }

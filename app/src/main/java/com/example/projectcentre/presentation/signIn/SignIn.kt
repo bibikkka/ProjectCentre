@@ -54,7 +54,7 @@ class SignIn : Fragment() {
 //                    }
 //                }.launchWhenStarted()
 //            }
-            findNavController().navigate(R.id.action_sign)
+            findNavController().navigate(R.id.action_signIn_to_mainPage)
         }
 
         binding.textregister.setOnClickListener {

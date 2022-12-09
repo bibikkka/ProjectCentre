@@ -3,121 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/projectsFragment">
+            app:startDestination="@id/signIn">
 
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.projectcentre."
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.projectcentre.presentation.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
-    <fragment
-        android:id="@+id/navigation_person"
-        android:name="com.example.projectcentre.presentation.person.PersonFragment"
-        android:label="@string/title_person"
-        tools:layout="@layout/fragment_person" />
-    <fragment
-        android:id="@+id/projectsFragment"
-        android:name="com.example.projectcentre.presentation.projects.ProjectsFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_projects" >
-        <action
-            android:id="@+id/action_projectsFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
-        <argument
-            android:name="projectName"
-            app:argType="string" />
-        <argument
-            android:name="projectDateStart"
-            app:argType="string" />
-        <argument
-            android:name="projectDateEnd"
-            app:argType="string" />
-        <argument
-            android:name="projectZakazchik"
-            app:argType="string" />
-        <action
-            android:id="@+id/action_projectsFragment_to_addProject"
-            app:destination="@id/addProject" />
-    </fragment>
-    <fragment
-        android:id="@+id/detailFragment"
-        android:name="com.example.projectcentre.presentation.detail.DetailFragment"
-        android:label="Подробнее о проекте"
-        tools:layout="@layout/fragment_detail" >
-        <argument
-            android:name="projectName"
-            app:argType="string" />
-        <argument
-            android:name="projectDateStart"
-            app:argType="string" />
-        <argument
-            android:name="projectDateEnd"
-            app:argType="string" />
-        <argument
-            android:name="projectZakazchik"
-            app:argType="string" />
-        <action
-            android:id="@+id/action_detailFragment_to_addTask"
-            app:destination="@id/addTask" />
-        <argument android:name="projectID"
-            app:argType="integer" />
-    </fragment>
-    <fragment
-        android:id="@+id/addProject"
-        android:name="com.example.projectcentre.presentation.projects.AddProject"
-        android:label="Добавить проект"
-        tools:layout="@layout/fragment_add_project" >
-        <action
-            android:id="@+id/action_addProject_to_projectsFragment"
-            app:destination="@id/projectsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/addTask"
-        android:name="com.example.projectcentre.presentation.tasks.AddTask"
-        android:label="Добавить задачу"
-        tools:layout="@layout/fragment_add_task" >
-        <argument
-            android:name="id"
-            app:argType="integer" />
-        <action
-            android:id="@+id/action_addTask_to_detailFragment"
-            app:destination="@id/detailFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/tasks"
-        android:name="com.example.projectcentre.presentation.tasks.Tasks"
-        android:label="Задачи"
-        tools:layout="@layout/fragment_tasks" />
-    <fragment
-        android:id="@+id/taskDetail"
-        android:name="com.example.projectcentre.presentation.tasks.TaskDetail"
-        android:label="Подробнее о задаче"
-        tools:layout="@layout/fragment_task_detail" >
-        <argument
-            android:name="taskName"
-            app:argType="string" />
-        <argument
-            android:name="taskDateStart"
-            app:argType="string" />
-        <argument
-            android:name="tasktDateEnd"
-            app:argType="string" />
-        <argument
-            android:name="taskStatus"
-            app:argType="string" />
-        <argument
-            android:name="taskDescription"
-            app:argType="string" />
-        <argument
-            android:name="taskJobName"
-            app:argType="string" />
-    </fragment>
     <fragment
         android:id="@+id/signIn"
         android:name="com.example.projectcentre.presentation.signIn.SignIn"
@@ -126,9 +13,7 @@
         <action
             android:id="@+id/action_signIn_to_signUp"
             app:destination="@id/signUp" />
-        <action
-            android:id="@+id/action_signIn_to_projectsFragment"
-            app:destination="@id/projectsFragment" />
+        <action android:id="@+id/action_signIn_to_mainPage" app:destination="@id/mainPage"/>
     </fragment>
     <fragment
         android:id="@+id/signUp"
@@ -138,8 +23,8 @@
         <action
             android:id="@+id/action_signUp_to_signIn"
             app:destination="@id/signIn" />
-        <action
-            android:id="@+id/action_signUp_to_projectsFragment"
-            app:destination="@id/projectsFragment" />
+        <action android:id="@+id/action_signUp_to_mainPage" app:destination="@id/mainPage"/>
     </fragment>
+    <fragment android:id="@+id/mainPage" android:name="com.example.projectcentre.presentation.mainPage.MainPage"
+              android:label="fragment_main_page" tools:layout="@layout/fragment_main_page"/>
 </navigation>
