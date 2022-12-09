@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#996DB6</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#5A1F83</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_bottom">#000000</color>
+    <color name="ripple_effect">#A0AEFF</color>
+    <color name="btn_sign_in">#FFFFFF</color>
+    <color name="material_pink500">#ffe91e63</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="greeny">#72E7B2</color>
+    <color name="pink">#F78B89</color>
+    <color name="reder">#FC536D</color>
+    <color name="purple_light">#9863ED</color>
+    <color name="bluest">#889CFB</color>
+    <color name="blueLoginVariant">#1D76FC</color>
+    <color name="cyan_light">#DEEAFC</color>
+    <color name="yellow">#E7CFA0</color>
+    <color name="orange_light">#FFBF56</color>
+    <color name="grey_light">#8E8E8E</color>
+    <color name="grey_lighter">#A1A1A1</color>
+    <color name="grey_lightest">#F6F6F6</color>
+    <color name="cloud">#FFC8D4F3</color>
+    <color name="dark">#FF111016</color>
+    <color name="textColor">#FF111016</color>
+    <color name="cardTextColor">#FFFFFFFF</color>
+    <color name="descriptionTextColor">#FF0F0F33</color>
+    <color name="backgroundColor">#FFFFFFFF</color>
+    <color name="lightGray">#FFD9D9D9</color>
+    <color name="cornerTextInput">#FF000000</color>
+    <color name="morePage">#FF868383</color>
+    <color name="transparent">#00000000</color>
+</resources>

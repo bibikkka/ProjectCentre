@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        tools:context=".presentation.mainPage.MainPage" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="4sp"
+            app:cardElevation="4dp"
+            app:strokeColor = "@color/black"
+            app:strokeWidth="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardBackgroundColor="@drawable/main_page_background_card"
+            android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginBottom="20sp"
+                      android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/black"/>
+            <LinearLayout
+
+                    android:background="@color/white"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                                  android:layout_marginStart="10sp"
+                                                                  android:orientation="vertical">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Beauty Club"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10sp"
+                        android:fontFamily="@font/montserrat_alternates_medium"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="18sp"
+                          android:textColor="@color/black"
+                          android:text="Уфа, ул. Октябрьской Революции, 27Б"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="18sp"
+                          android:textColor="@color/black"
+                          android:text="Наши контакты:"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="14sp"
+                          android:textColor="@color/black"
+                          android:text="+7‒909‒353‒99‒91"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

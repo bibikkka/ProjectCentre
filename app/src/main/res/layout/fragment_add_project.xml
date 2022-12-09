@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g9"
+    tools:context=".presentation.projects.AddProject">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="ДОБАВИТЬ НОВЫЙ ПРОЕКТ"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:textColor="#643085"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/naming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:text="Название"
+        android:textStyle="bold"
+        android:textColor="#72488E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+
+    <EditText
+        android:id="@+id/naming_tru"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:hint="Название"
+        android:background="@drawable/shape_background"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/text_bottom"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/zakazchik"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/zakazchik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="33dp"
+        android:text="Заказчик"
+        android:textStyle="bold"
+        android:textColor="#72488E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naming" />
+
+
+    <EditText
+        android:id="@+id/zakazchik_tru"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:hint="Заказчик"
+        android:background="@drawable/shape_background"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/text_bottom"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/zakazchik"
+        app:layout_constraintTop_toBottomOf="@+id/naming_tru" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dataStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="33dp"
+        android:text="Дата начала"
+        android:textStyle="bold"
+        android:textColor="#72488E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zakazchik"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/DateTv"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_background"
+        android:padding="15dp"
+        android:textColor="@color/text_bottom"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dataStart"
+        app:layout_constraintTop_toBottomOf="@+id/zakazchik_tru"
+        app:layout_constraintLeft_toRightOf="@id/materialTextView2" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/materialTextView2"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/ff"
+        android:elevation="5dp"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/DateTv"
+        app:layout_constraintTop_toBottomOf="@+id/zakazchik_tru"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dataEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="33dp"
+        android:text="Дата сдачи"
+        android:textStyle="bold"
+        android:textColor="#72488E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataStart" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/DateTv2"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_background"
+        android:padding="15dp"
+        android:textColor="@color/text_bottom"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dataEnd"
+        app:layout_constraintTop_toBottomOf="@+id/DateTv"
+        app:layout_constraintLeft_toRightOf="@id/materialTextView3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dateEndTru"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ff"
+        android:elevation="5dp"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materialTextView2"
+        app:layout_constraintLeft_toRightOf="@id/DateTv2"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Статус"
+        android:textStyle="bold"
+        android:textColor="#72488E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataEnd" />
+
+    <Spinner
+        android:id="@+id/statusTru"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_background"
+        android:elevation="5dp"
+        android:entries="@array/catStatuses"
+        android:text="Выбрать дату"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/status"
+        app:layout_constraintTop_toBottomOf="@+id/DateTv2"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создать"
+        android:textSize="15sp"
+        android:textColor="#F4F4F4"
+        android:background="#72488E"
+        android:id="@+id/create"
+        android:layout_marginBottom="90dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
