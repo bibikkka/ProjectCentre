@@ -27,4 +27,19 @@
     </fragment>
     <fragment android:id="@+id/mainPage" android:name="com.example.projectcentre.presentation.mainPage.MainPage"
               android:label="fragment_main_page" tools:layout="@layout/fragment_main_page"/>
+    <fragment android:id="@+id/profileFragment"
+              android:name="com.example.projectcentre.presentation.profile.ProfileFragment"
+              android:label="fragment_profile" tools:layout="@layout/fragment_profile"/>
+    <fragment android:id="@+id/serviceChoice"
+              android:name="com.example.projectcentre.presentation.services.ServiceChoice"
+              android:label="fragment_service_choice" tools:layout="@layout/fragment_service_choice">
+        <action android:id="@+id/action_serviceChoice_to_serviceFragment" app:destination="@id/serviceFragment"/>
+        <action android:id="@+id/action_serviceChoice_to_masterFragment" app:destination="@id/masterFragment"/>
+    </fragment>
+    <fragment android:id="@+id/masterFragment"
+              android:name="com.example.projectcentre.presentation.services.MasterFragment"
+              android:label="fragment_master" tools:layout="@layout/fragment_master"/>
+    <fragment android:id="@+id/serviceFragment"
+              android:name="com.example.projectcentre.presentation.services.ServiceFragment"
+              android:label="fragment_service" tools:layout="@layout/fragment_service"/>
 </navigation>

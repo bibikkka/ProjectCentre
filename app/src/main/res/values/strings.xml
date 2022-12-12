@@ -1,10 +1,8 @@
 <resources>
     <string name="app_name">ProjectCentre</string>
     <string name="title_home">Главная</string>
-    <string name="title_dashboard">Проекты</string>
-    <string name="title_tasks">Задачи</string>
-    <string name="title_notifications">Входящие</string>
-    <string name="title_person">Учетная запись</string>
+    <string name="title_services">Услуги</string>
+    <string name="title_profile">Профиль</string>
     <string name="sign">We need you to sign up</string>
     <string name="text_bottom">Войдите в свою учетную запись</string>
     <string name="btnSingIn">Войти</string>

@@ -42,27 +42,27 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.projectsFragment, R.id.navigation_notifications, R.id.navigation_person
+                R.id.mainPage, R.id.serviceChoice, R.id.profileFragment
             ),
 
             )
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
-                R.id.mainPage -> {
+                R.id.mainPage, R.id.serviceChoice, R.id.profileFragment -> {
                     binding.navView.visibility = View.VISIBLE
                     (this as AppCompatActivity).supportActionBar!!.show()
                     binding.navHostFragmentActivityMain.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                         setMargins(0, 0, 0, valueInPixels)
                     }
                 }
-//                R.id.addProject, R.id.detailFragment, R.id.taskDetail, R.id.addTask -> {
-//                    (this as AppCompatActivity).supportActionBar!!.show()
-//                    binding.navView.visibility = View.GONE
-//                    binding.navHostFragmentActivityMain.updateLayoutParams<ViewGroup.MarginLayoutParams> {
-//                        setMargins(0, 0, 0, 0)
-//                    }
-//                }
+                R.id.serviceFragment, R.id.masterFragment -> {
+                    (this as AppCompatActivity).supportActionBar!!.show()
+                    binding.navView.visibility = View.GONE
+                    binding.navHostFragmentActivityMain.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                        setMargins(0, 0, 0, 0)
+                    }
+                }
                 else -> {
                     (this as AppCompatActivity).supportActionBar!!.hide()
                     binding.navView.visibility = View.GONE

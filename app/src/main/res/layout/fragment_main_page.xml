@@ -83,8 +83,16 @@
         
     </androidx.cardview.widget.CardView>
 
-    <com.teseo.studios.autoscrollcontent.AutoScrollContent
-            android:orientation="horizontal"
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10sp"
+            android:text="Примеры наших работ:"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:orientation="vertical"
             android:id="@+id/rvAutoScrollContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

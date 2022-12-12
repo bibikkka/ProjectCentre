@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+              tools:context=".presentation.services.MasterFragment">
+
+    <androidx.cardview.widget.CardView
+            android:layout_marginTop="10sp"
+            android:id="@+id/cvAlina"
+            android:layout_marginHorizontal="10sp"
+            app:cardElevation="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:layout_margin="10sp"
+                    android:layout_weight="0"
+                    android:src="@drawable/barber"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Алина"
+                          android:textSize="18sp"
+                          android:textColor="@color/black"
+                          android:fontFamily="@font/poppins"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Перманентный макияж, Brow мастер"
+                          android:textSize="14sp"
+                          android:textColor="@color/grey_light"
+                          android:fontFamily="@font/poppins"/>
+            </LinearLayout>
+            <ImageView android:layout_width="30sp" android:layout_height="30sp"
+                       android:src="@drawable/right"
+                       android:layout_weight="0"
+                       android:layout_marginEnd="20sp"
+                       android:layout_gravity="center_vertical|start"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:layout_marginTop="10sp"
+            android:id="@+id/cvMaster"
+            android:layout_marginHorizontal="10sp"
+            app:cardElevation="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:layout_margin="10sp"
+                    android:layout_weight="0"
+                    android:src="@drawable/barber"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Алина"
+                          android:textSize="18sp"
+                          android:textColor="@color/black"
+                          android:fontFamily="@font/poppins"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Перманентный макияж, Brow мастер"
+                          android:textSize="14sp"
+                          android:textColor="@color/grey_light"
+                          android:fontFamily="@font/poppins"/>
+            </LinearLayout>
+            <ImageView android:layout_width="30sp" android:layout_height="30sp"
+                       android:src="@drawable/right"
+                       android:layout_weight="0"
+                       android:layout_marginEnd="20sp"
+                       android:layout_gravity="center_vertical|start"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
